@@ -187,6 +187,7 @@ plugins:
         'admin/settings/monitoring.md': 'admin/monitoring/frontend.md'
         'admin/alerts/create.md': 'admin/announcements/create.md'
         'user/sessions/jupyter/collaboration.md': 'user/projects/volumes.md'
+  - print-site
 
 markdown_extensions:
   - meta
