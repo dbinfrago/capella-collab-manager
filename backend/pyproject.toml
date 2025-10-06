@@ -50,7 +50,7 @@ dependencies = [
   "pyinstrument",
   "Jinja2",
   "pydantic-extra-types>=2.10.2",
-  "asyncer==0.0.8",
+  "asyncer==0.0.9",
   "alembic_postgresql_enum",
   "APScheduler"
 ]
