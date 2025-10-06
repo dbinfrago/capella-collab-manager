@@ -67,10 +67,12 @@
   }
   @for (model of modelService.models$ | async; track model.id) {
     <div
-      class="collab-card flex min-h-[200px] w-full flex-col p-0! select-none sm:w-[500px]"
+      class="collab-card flex min-h-[200px] w-full flex-col p-0! select-none
+        sm:w-[500px]"
     >
       <div
-        class="rounded-t-material bg-primary flex justify-between p-2.5 align-middle text-white"
+        class="rounded-t-material bg-primary flex justify-between p-2.5
+          align-middle text-white"
       >
         <div class="ml-2.5">
           <div class="text-xl select-text" style="word-break: break-word">
@@ -88,7 +90,8 @@
 
         <div class="flex items-center align-middle">
           <div
-            class="collab-card mx-1 flex h-[50px] items-center bg-green-800! p-0! text-white"
+            class="collab-card mx-1 flex h-[50px] items-center bg-green-800!
+              p-0! text-white"
           >
             <div class="px-4 text-center">
               <div class="text-xs">Nature</div>
@@ -102,7 +105,8 @@
             </div>
           </div>
           <div
-            class="collab-card mx-1 flex h-[50px] items-center bg-red-800! p-0! text-white"
+            class="collab-card mx-1 flex h-[50px] items-center bg-red-800! p-0!
+              text-white"
           >
             <div class="px-4 text-center">
               <div class="text-xs text-nowrap">Working mode</div>
