@@ -32,7 +32,7 @@ jobs:
         id: git-diff
         run: git add . && git diff --cached --exit-code
       - name: Find existing comment on PR
-        uses: peter-evans/find-comment@v3
+        uses: peter-evans/find-comment@v4
         if: always() && steps.git-diff.outcome == 'failure'
         id: fc
         with:
@@ -91,7 +91,7 @@ jobs:
             echo 'EOF'
           } >> "$GITHUB_OUTPUT"
       - name: Find existing comment on PR
-        uses: peter-evans/find-comment@v3
+        uses: peter-evans/find-comment@v4
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
