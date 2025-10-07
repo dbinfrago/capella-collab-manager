@@ -10,7 +10,6 @@ import {
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { MatNativeDateModule } from '@angular/material/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideAnimations } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { BACKEND_URL } from 'src/app/environment';
 import { BASE_PATH } from 'src/app/openapi';
@@ -48,7 +47,6 @@ bootstrapApplication(AppComponent, {
       useClass: ErrorHandlingInterceptor,
       multi: true,
     },
-    provideAnimations(),
     provideHttpClient(withInterceptorsFromDi()),
     {
       provide: BASE_PATH,

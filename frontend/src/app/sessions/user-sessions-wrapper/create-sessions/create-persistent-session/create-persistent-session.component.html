@@ -70,10 +70,12 @@
         this.selectedTool && selectedTool.config.connection.methods.length > 1
       ) {
         <div
-          class="flex flex-col items-start rounded-t-md border border-b-black bg-(--button-background) px-2 text-(--button-title-color)"
+          class="flex flex-col items-start rounded-t-md border border-b-black
+            bg-(--button-background) px-2 text-(--button-title-color)"
         >
           <div
-            class="mt-1 ml-[-13px] scale-75 text-base tracking-(--form-field-letter-spacing)"
+            class="mt-1 ml-[-13px] scale-75 text-base
+              tracking-(--form-field-letter-spacing)"
           >
             Connection method*
           </div>
@@ -95,7 +97,8 @@
 
         @if (this.getSelectedConnectionMethod()?.description) {
           <div
-            class="rounded-material flex items-center gap-2 border p-2 text-sm shadow-sm"
+            class="rounded-material flex items-center gap-2 border p-2 text-sm
+              shadow-sm"
           >
             <mat-icon>info</mat-icon>
             <span>{{ getSelectedConnectionMethod()?.description }}</span>

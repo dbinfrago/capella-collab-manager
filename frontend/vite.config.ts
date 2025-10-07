@@ -7,6 +7,7 @@ import { codecovVitePlugin } from '@codecov/vite-plugin';
 import gzipPlugin from 'rollup-plugin-gzip';
 import { promisify } from 'util';
 import { defineConfig } from 'vite';
+import type { PluginOption } from 'vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import viteTsConfigPaths from 'vite-tsconfig-paths';
 import { brotliCompress } from 'zlib';
@@ -47,8 +48,8 @@ export default defineConfig(() => {
             Buffer.isBuffer(content) ? content : Buffer.from(content),
           ),
         fileName: '.br',
-      }),
-      gzipPlugin(),
+      }) as PluginOption,
+      gzipPlugin() as PluginOption,
     ],
     server: {
       fs: {

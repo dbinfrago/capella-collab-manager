@@ -18,7 +18,8 @@
     ) {
       @if (licenseServer.usage) {
         <div
-          class="rounded-material mt-2 flex items-center gap-2 border p-2 text-sm shadow-sm"
+          class="rounded-material mt-2 flex items-center gap-2 border p-2
+            text-sm shadow-sm"
           [class]="getLevel(licenseServer.usage)?.classes"
         >
           <mat-icon class="shrink-0">{{

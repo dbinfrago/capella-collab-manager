@@ -16,7 +16,8 @@
         @let pipelineRunState =
           getColorForPipelineRunStatus(pipelineRun.status);
         <div
-          class="flex grow basis-1/5 flex-col rounded-lg border p-1 text-center text-white"
+          class="flex grow basis-1/5 flex-col rounded-lg border p-1 text-center
+            text-white"
           [ngClass]="pipelineRunState.css"
           [matTooltip]="pipelineRunState.info"
         >
@@ -57,7 +58,8 @@
       </div>
 
       <div
-        class="flex max-w-full flex-1 grow flex-col overflow-y-hidden rounded-lg border py-2 pl-2"
+        class="flex max-w-full flex-1 grow flex-col overflow-y-hidden rounded-lg
+          border py-2 pl-2"
       >
         <span class="mb-2 font-bold">Events</span>
         <div class="flex flex-1 grow flex-col gap-1 overflow-y-auto">
@@ -80,7 +82,8 @@
           @if (sortedEvents !== undefined) {
             @for (event of sortedEvents; track event) {
               <div
-                class="mr-2 flex flex-col gap-1 rounded border px-2 py-1 break-words"
+                class="mr-2 flex flex-col gap-1 rounded border px-2 py-1
+                  break-words"
               >
                 <div class="flex flex-wrap items-center gap-1">
                   <span>{{ event.reason }}</span>
@@ -102,13 +105,15 @@
         Logs
       </div>
       <div
-        class="relative flex h-[500px] flex-col overflow-y-auto bg-black p-2 text-sm text-white sm:h-full"
+        class="relative flex h-[500px] flex-col overflow-y-auto bg-black p-2
+          text-sm text-white sm:h-full"
       >
         <div class="absolute inset-y-0 left-[4.5rem] w-px bg-gray-700"></div>
         @if (logs !== undefined) {
           @for (logs of logs; track logs) {
             <div
-              class="group flex items-center gap-4 transition-colors hover:bg-gray-700"
+              class="group flex items-center gap-4 transition-colors
+                hover:bg-gray-700"
             >
               <span
                 class="w-14 shrink-0 text-center font-mono! text-xs select-none"

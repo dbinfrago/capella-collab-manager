@@ -92,8 +92,8 @@ repos:
           - 'prettier@^3.6.2'
           - 'prettier-plugin-tailwindcss@^0.6.13'
           - '@trivago/prettier-plugin-sort-imports@^5.2.2'
-          - 'tailwindcss@^4.1.11'
-          - 'prettier-plugin-classnames@^0.8.0'
+          - 'tailwindcss@^4.1.14'
+          - 'prettier-plugin-classnames@^0.8.4'
           - 'prettier-plugin-merge@^0.8.0'
   - repo: https://github.com/Lucas-C/pre-commit-hooks
     rev: v1.5.5
@@ -166,14 +166,14 @@ repos:
     hooks:
       - id: eslint
         additional_dependencies:
-          - 'eslint@^9.31.0'
-          - '@eslint/js@^9.31.0'
-          - 'angular-eslint@~20.1.1'
+          - 'eslint@^9.37.0'
+          - '@eslint/js@^9.37.0'
+          - 'angular-eslint@~20.3.0'
           - 'eslint-config-prettier@^10.1.8'
-          - 'typescript-eslint@^8.38.0'
-          - 'eslint-plugin-unused-imports@^4.1.4'
-          - 'eslint-plugin-storybook@^9.0.18'
-          - 'tailwindcss@^4.1.11'
+          - 'typescript-eslint@^8.45.0'
+          - 'eslint-plugin-unused-imports@^4.2.0'
+          - 'eslint-plugin-storybook@^9.1.10'
+          - 'tailwindcss@^4.1.14'
         args:
           [
             '--config',
