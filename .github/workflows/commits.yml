@@ -41,7 +41,7 @@ jobs:
           comment-author: 'github-actions[bot]'
           body-includes: conventional commit
       - name: Post comment if validation failed
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         if: always() && steps.conventional-commits.outcome == 'failure'
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}

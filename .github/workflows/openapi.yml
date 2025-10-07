@@ -40,7 +40,7 @@ jobs:
           comment-author: 'github-actions[bot]'
           body-includes: The generated OpenAPI client is not up to date
       - name: Post comment if client is outdated
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         if: always() && steps.git-diff.outcome == 'failure'
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
@@ -98,7 +98,7 @@ jobs:
           comment-author: 'github-actions[bot]'
           body-includes: API Changelog
       - name: Post comment with changelog
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
