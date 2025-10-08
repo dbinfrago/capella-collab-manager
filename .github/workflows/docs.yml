@@ -28,7 +28,7 @@ jobs:
           curl -L -o swagger.tar.gz "$SWAGGER_UI_DOWNLOAD_URL"
           tar -xzf swagger.tar.gz --strip-components=1
       - name: Install uv
-        uses: astral-sh/setup-uv@v6
+        uses: astral-sh/setup-uv@v7
         with:
           activate-environment: true
       - name: Install backend
