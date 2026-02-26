@@ -44,6 +44,8 @@ spec:
             claimName: {{ .Release.Name }}-scheduler-promtail
         {{ end }}
       {{- include "capellacollab.pod.spec" . | indent 6 -}}
+      # Jobs can take up to one hour to complete, do not interrupt them
+      terminationGracePeriodSeconds: 3600
       containers:
         - name: scheduler
           {{- include "capellacollab.container.spec" . | indent 10 -}}
@@ -53,8 +55,6 @@ spec:
           image: {{ .Values.docker.registry.internal }}/backend:{{ .Values.docker.tag }}
           {{ end }}
           args: ["scheduler"]
-          # Jobs can take up to one hour to complete, do not interrupt them
-          terminationGracePeriodSeconds: 3600
           env:
             - name: no_proxy_additional
               value: "{{ .Values.proxy.no_proxy }}"
