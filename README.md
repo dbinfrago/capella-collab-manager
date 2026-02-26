@@ -5,6 +5,15 @@
 
 # Capella Collaboration Manager
 
+> [!IMPORTANT]
+>
+> **Looking for new maintainers**
+>
+> Due to a shift in priorities, this project is no longer under active
+> development. It will only receive security updates going forward. We are
+> looking for new maintainers to take over the project. If you are interested,
+> please open an issue or reach out to the current maintainers.
+
 [![REUSE status](https://api.reuse.software/badge/github.com/dbinfrago/capella-collab-manager)](https://api.reuse.software/info/github.com/dbinfrago/capella-collab-manager)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![lint](https://github.com/dbinfrago/capella-collab-manager/actions/workflows/lint.yml/badge.svg)
